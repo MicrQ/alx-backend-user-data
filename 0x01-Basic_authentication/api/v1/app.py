@@ -23,6 +23,7 @@ if auth_type:
 
 @app.before_request
 def before_request_handle():
+    """ excuted before any request """
     if auth is None:
         return
 
